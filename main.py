@@ -1,27 +1,18 @@
-# This is a sample Python script.
+from functions.functions import print_hey
+from basics.basics import area_of_circle
 
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def addition(param1, param2):
-    return param1 + param2
-
-
-def sub(param1, param2):
-    return param1 - param2
-
-
-def print_hey(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'bobo, {name}')  # Press ⌘F8 to toggle the breakpoint.
-    return f'bobo, {name}'
+def main():
+    print_hey('bobo')
+    print_hey('jeep')
+    print_hey('sam')
+    print(area_of_circle(2))
+    colors = ['red', 'blue', 'green', 'black']
+    print(colors[3])    ## red
+    print(colors[1])
+    print(colors[2])    ## green
+    print(len(colors))  ## 3
 
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hey('bobo')
-    print_hey('jeep')
-    print_hey('sam')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    main()
